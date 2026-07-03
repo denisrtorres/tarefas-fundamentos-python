@@ -10,3 +10,13 @@
 numeros = (5, 2, 8, 2, 9, 2, 5, 7, 8, 5)
 
 exibidos = set()
+
+#Loop para verificar cada número na tupla
+for num in numeros:
+    #Conta a frequência do número
+    quantidade = numeros.count(num)
+    
+    #Verifica se aparece mais de uma vez e se ainda não foi exibido
+    if quantidade > 1 and num not in exibidos:
+        print(f"{num} aparece {quantidade} vezes")
+        exibidos.add(num)
