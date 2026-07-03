@@ -13,3 +13,7 @@ menor_venda = min(vendas)
 
 media_vendas = sum(vendas) / len(vendas)
 
+# Exibição dos resultados
+print(f"a) Maior venda: R$ {maior_venda}")
+print(f"b) Menor venda: R$ {menor_venda}")
+print(f"c) Média das vendas: R$ {media_vendas:.2f}")
